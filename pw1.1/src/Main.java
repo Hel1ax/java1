@@ -14,7 +14,7 @@ public class Main {
         int[] array = new int[sizeArray];
         int sum = 0;
         for (int i = 0; i < sizeArray; i++) {
-            System.out.print("Введите значение" + (i + 1) + " -го элемента массива: ");
+            System.out.print("Введите значение " + (i + 1) + " -го элемента массива: ");
             if (!scanner.hasNextInt()) {
                 System.out.println("Ошибка! Введено нецелое число");
                 System.exit(-1);
