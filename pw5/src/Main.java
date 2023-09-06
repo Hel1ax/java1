@@ -16,14 +16,17 @@ public class Main {
 
 
     public static long calculateFactorial(int n) {
-        if (n < 1) {
-            System.out.println("Введены неправильные параметры.");
+        if (n < 1 || n > 20) {
+            System.out.println("Введены неправильные параметры. Невозможно определить факториал");
             System.exit(-1);
         }
-        if (n == 1) {
-            return 1;
+
+        long factorial = 1;
+
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
         }
 
-        return n * calculateFactorial(n - 1);
+        return factorial;
     }
 }
